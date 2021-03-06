@@ -1,3 +1,5 @@
+package cars;
+
 public class Offroader extends Car{
     private String drive;
     private boolean pickUp;

@@ -1,3 +1,5 @@
+package cars;
+
 public class SuperCar extends Sedan{
 
     private double acceleration;
@@ -16,6 +18,11 @@ public class SuperCar extends Sedan{
 
     public SuperCar(String model, String color, int maxSpeed, String drive, double acceleration) {
         super(model, color, maxSpeed, drive);
+        setAcceleration(acceleration);
+    }
+
+    public SuperCar(String color, int maxSpeed, String drive, double acceleration) {
+        super(color, maxSpeed, drive);
         setAcceleration(acceleration);
     }
 

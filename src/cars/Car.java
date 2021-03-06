@@ -1,3 +1,5 @@
+package cars;
+
 public abstract class Car {
 
     private String model;
@@ -36,6 +38,11 @@ public abstract class Car {
 
     Car(String model, String color, int maxSpeed, String type) {
         this.model = model;
+        this.color = color;
+        this.type = type;
+        setMaxSpeed(maxSpeed);
+    }
+    Car(String color, int maxSpeed, String type) {
         this.color = color;
         this.type = type;
         setMaxSpeed(maxSpeed);
