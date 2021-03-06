@@ -1,4 +1,4 @@
-public class Sedan extends Car{
+public abstract class Sedan extends Car{
 
     private String drive;
 
