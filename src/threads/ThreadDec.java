@@ -8,12 +8,21 @@ public class ThreadDec implements Runnable{
         this.res = res;
     }
 
+    @Override
     public void run() {
-        for (;;){
-            if(res.getResUnits() > res.minRes()) {
-                res.dec();
+        synchronized (res) {
+            for (;;) {
+                if (res.getResUnits() > res.minRes()) {
+                    res.dec();
+                } else {
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                System.out.println(res.getDescription());
             }
-            System.out.println(res.getDescription());
         }
     }
 }
