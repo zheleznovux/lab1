@@ -15,19 +15,14 @@ public class SuperCar extends Sedan{
             this.acceleration = acceleration;
         }
     }
-
-    public SuperCar(String model, String color, int maxSpeed, String drive, double acceleration) {
-        super(model, color, maxSpeed, drive);
-        setAcceleration(acceleration);
-    }
-
-    public SuperCar(String color, int maxSpeed, String drive, double acceleration) {
+//    Sedan(String color, int maxSpeed, String drive)
+    public SuperCar(String color, int maxSpeed, String drive) {
         super(color, maxSpeed, drive);
-        setAcceleration(acceleration);
+        super.setDescription("This is Supercar ");
+        setAcceleration(3.5);
     }
 
-    @Override
-    public String getDescription() {
-        return super.getDescription() + ", разгон до 100км/ч: " + this.acceleration;
+    public double cost() {
+        return 10000;
     }
 }

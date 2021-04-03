@@ -12,18 +12,12 @@ public abstract class Sedan extends Car{
         this.drive = drive;
     }
 
-    public Sedan(String model, String color, int maxSpeed, String drive) {
-        super(model, color, maxSpeed, "sedan");
-        this.drive = drive;
-    }
-
     public Sedan(String color, int maxSpeed, String drive) {
-        super(color, maxSpeed, "sedan");
-        this.drive = drive;
-    }
+        setDescription("This is Sedan ");
 
-    @Override
-    public String getDescription() {
-        return super.getDescription() + "тип привода: " + this.drive;
+        setMaxSpeed(maxSpeed);
+        setColor(color);
+
+        this.drive = drive;
     }
 }

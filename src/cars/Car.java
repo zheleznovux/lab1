@@ -1,19 +1,12 @@
 package cars;
 
-public abstract class Car {
+public abstract class Car { //interface
 
-    private String model;
     private String color;
     private int maxSpeed;
-    private String type;
+    String description = "Car";
 
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
+    public abstract double cost();
 
     public String getColor() {
         return color;
@@ -36,19 +29,11 @@ public abstract class Car {
         }
     }
 
-    Car(String model, String color, int maxSpeed, String type) {
-        this.model = model;
-        this.color = color;
-        this.type = type;
-        setMaxSpeed(maxSpeed);
-    }
-    Car(String color, int maxSpeed, String type) {
-        this.color = color;
-        this.type = type;
-        setMaxSpeed(maxSpeed);
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getDescription() {
-        return "Машина модели: " + this.model + ' ' + this.type + ", цвет: " + this.color  + ", макс. скорость = " + this.maxSpeed + "км/ч, ";
+        return this.description;
     }
 }
