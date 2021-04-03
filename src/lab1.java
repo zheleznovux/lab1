@@ -1,4 +1,6 @@
 import cars.*;
+import cars.decorators.Spoiler;
+import cars.decorators.Turbo;
 
 import java.util.Random;
 

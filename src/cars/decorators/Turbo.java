@@ -1,11 +1,12 @@
-package cars;
+package cars.decorators;
 
-public class Turbo extends CustomizingDecorator{
+import cars.Car;
+import cars.decorators.CustomizingDecorator;
 
-    Car car;
+public class Turbo extends CustomizingDecorator {
 
     public Turbo(Car car) {
-        this.car = car;
+        super(car);
     }
 
     @Override

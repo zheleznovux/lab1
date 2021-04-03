@@ -1,11 +1,12 @@
-package cars;
+package cars.decorators;
 
-public class Spoiler extends CustomizingDecorator{
+import cars.Car;
+import cars.decorators.CustomizingDecorator;
 
-    Car car;
+public class Spoiler extends CustomizingDecorator {
 
-    public Spoiler(Car car) {
-        this.car = car;
+    public Spoiler (Car car) {
+        super(car);
     }
 
     @Override
