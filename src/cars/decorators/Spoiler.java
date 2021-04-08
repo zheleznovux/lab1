@@ -15,6 +15,6 @@ public class Spoiler extends CustomizingDecorator {
     }
 
     public String getDescription() {
-        return car.getDescription() + " with spoiler ";
+        return car.getDescription() + " with spoiler";
     }
 }

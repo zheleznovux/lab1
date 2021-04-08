@@ -4,7 +4,7 @@ public abstract class Car { //interface
 
     private String color;
     private int maxSpeed;
-    String description = "Car";
+    protected String description = "Car,";
 
     public abstract double cost();
 
@@ -31,6 +31,10 @@ public abstract class Car { //interface
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public void addDescription(String description) {
+        this.description += " " + description;
     }
 
     public String getDescription() {
