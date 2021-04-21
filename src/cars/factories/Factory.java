@@ -7,7 +7,7 @@ public abstract class Factory {
     public Car orderNewCar(String type)
     {
         Car car = createCar(type);
-        car.addDescription("(from the off roads factory)");
+        car.addDescription("(manufactured by the factory)");
 
         return car;
     }
