@@ -20,6 +20,13 @@ public class labs {
             int j = random.nextInt(2) + 1;
 
             switch (j) {
+                case (1):
+
+                    myCars[i] = setRandomDecorator(setRandomDecorator(new BigSUV()));
+                    break;
+                case (2):
+                    myCars[i] = setRandomDecorator(setRandomDecorator(setRandomDecorator(new SuperCarSedan())));
+                    break;
                 case (1) -> myCars[i] = setRandomDecorator(setRandomDecorator(new BigSUV()));
                 case (2) -> myCars[i] = setRandomDecorator(setRandomDecorator(setRandomDecorator(new SuperCarSedan())));
             }
