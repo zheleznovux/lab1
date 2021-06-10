@@ -21,6 +21,7 @@ public class labs {
 
             switch (j) {
                 case (1):
+
                     myCars[i] = setRandomDecorator(setRandomDecorator(new BigSUV()));
                     break;
                 case (2):
