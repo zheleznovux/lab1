@@ -58,7 +58,7 @@ public class lab7 {
             }
         }
 
-        System.out.println(sum);
+        System.out.println("Total:" + sum);
 
 
     }
